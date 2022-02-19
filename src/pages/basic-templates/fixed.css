@@ -1,0 +1,9 @@
+aside {
+    position: sticky;
+    top: 0;
+    width: 30%;
+}
+
+header, main, footer {
+    padding-left: 40%;
+}

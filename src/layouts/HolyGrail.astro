@@ -1,0 +1,58 @@
+---
+const items = ["Dog", "Cat", "Platipus"];
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homepage</title>
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<style global>
+		@import "../styles/global.css";
+        @layer components {
+            h1 {
+                @apply text-4xl
+            }
+            h2 {
+                @apply text-2xl
+            }
+        }
+	</style>
+</head>
+<body>
+<div id="wrapper" class="container mx-auto bg-zinc-100 flex flex-col min-h-screen">
+    <header><h1 class="bg-zinc-600 text-white p-2 text-center">Header</h1></header>
+    <section class="p-6 text-center">
+        <h1 class="text-9xl">Hero</h1>
+        <p>tagline of company</p>
+    </section>
+    <nav class="bg-zinc-400 flex flex-col md:flex-row text-center">
+    <a class="grow hover:bg-zinc-700 hover:text-white" href="/">home</a>
+    <a class="grow hover:bg-zinc-700 hover:text-white" href="/products">products</a>
+    <a class="grow hover:bg-zinc-700 hover:text-white" href="/about">about</a>
+    <a class="grow hover:bg-zinc-700 hover:text-white" href="/contact">contact</a>
+    </nav>
+
+    <main class="flex-grow flex flex-col md:flex-row">
+    
+    <section class="flex-grow bg-zinc-200 p-6">
+    	<slot />
+    </section>
+
+    <aside class="md:w-1/4 bg-zinc-300 p-6">
+    <h2>Aside</h2>
+    	<ul>
+  		{items.map((item) => (
+    		<li><a href="#">{item}</a></li>
+  		))}
+		</ul>
+    </aside>
+
+    </main>
+    
+    <footer class="bg-zinc-600 text-white p-2 text-center"><p>footer</p></footer>
+
+</div>
+</body>
+</html>

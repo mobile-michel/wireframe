@@ -1,0 +1,17 @@
+body > header, body > main, body > footer {
+    border: 1px solid red;
+    margin: 5px;
+    padding: 5px;
+}
+
+header > nav, main > article, footer > nav {
+    border: 1px dashed black;
+    margin: 5px;
+    padding: 5px;
+}
+
+article > aside {
+    border: 1px dotted black;
+    margin: 5px;
+    padding: 5px;
+}

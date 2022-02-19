@@ -1,0 +1,30 @@
+header {
+    height: 50vh;
+}
+
+main {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main>section {
+    min-height: 50vh;
+}
+
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main>section {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main>section>article {
+        flex-grow: 1;
+    }
+}

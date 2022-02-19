@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(82, 82, 82);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: auto 14em; 
+    grid-template-rows: 10em 5em auto 5em; 
+    grid-template-areas:
+    'header header'
+    'nav nav'
+    'main aside'
+    'footer footer';
+    grid-gap: 10px;
+}
+
+body > * {
+    padding: 10px;
+    background-color: rgb(212, 212, 212);
+}
+
+body > * > * {
+    padding: 10px;
+    background-color: rgb(243, 243, 243);
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+article {
+    margin-right: 10em;
+    margin-bottom: .5em;
+}
+
+aside {
+    grid-area: aside;
+}
+
+aside > a {
+    display: block;
+}
+
+footer {
+    grid-area: footer;
+}

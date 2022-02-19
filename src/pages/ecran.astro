@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couleurs par taille d'écrans</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            padding: 20px;
+        }
+
+        @media (min-width: 640px) {
+            body {
+                background-color: gray;
+            }
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        @media (min-width: 1080px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            body {
+                background-color: lightskyblue;
+            }
+        }
+
+        @media (min-width: 1440px) {
+            body {
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width: 1920px) {
+            body {
+                background-color: cyan;
+            }
+        }
+
+        @media (min-width: 2340px) {
+            body {
+                background-color: magenta;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Couleurs par taille d'écrans</h1>
+    <table>
+        <tr>
+            <th>couleur</th>
+            <th>pixels</th>
+            <th>appareil</th>
+        </tr>
+        <tr>
+            <td>bleu clair</td>
+            <td>639 et moins</td>
+            <td>Xiaomi portrait+Tab A portrait</td>
+        </tr>
+        <tr>
+            <td>gris</td>
+            <td>640 à 799</td>
+            <td>Xiaomi paysage+Chromebook portrait</td>
+        </tr>
+        <tr>
+            <td>rouge</td>
+            <td>800 à 1079</td>
+            <td>Tab A paysage</td>
+        </tr>
+        <tr>
+            <td>vert</td>
+            <td>1080 à 1199</td>
+            <td>Chromebook paysage</td>
+        </tr>
+        <tr>
+            <td>bleu</td>
+            <td>1200 à 1439</td>
+            <td>Eizo 1/2</td>
+        </tr>
+        <tr>
+            <td>jaune</td>
+            <td>1440 à 1919</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cyan</td>
+            <td>1920 à 2339</td>
+            <td>ZenBook paysage</td>
+        </tr>
+        <tr>
+            <td>magenta</td>
+            <td>2340 et plus</td>
+            <td>Eizo full</td>
+        </tr>
+    </table>
+    <ul>
+        <li>Xiaomi Mi Note 10 - Android 11: 1080 x 2340 px</li>
+        <li>Samsung Tab A - Android 5.1.1: 1280 x 800 px</li>
+        <li>Lenovo Chromebook - Chrome OS 94 : 100%=1080 x 675 | max=1920 x 1200 px</li>
+        <li>Asus ZenBook - MX Linux 19.4: 1920 x 1080 px</li>
+        <li>Silverstone - MX Linux 19.4 - Eizo: 2560 x 1440 px</li>
+    </ul>
+</body>
+
+</html>

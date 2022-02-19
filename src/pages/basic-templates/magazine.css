@@ -1,0 +1,16 @@
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main>section {
+        flex-basis: 33.333%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main>section>article {
+        flex-grow: 1;
+    }
+}
